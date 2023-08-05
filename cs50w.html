@@ -8,16 +8,28 @@ git push: push local repository to server
 git pull: pull what is available in web repository
 git log: show log of changes
 git reset --hard <commit hash>: go back to prior state of the repository based on commit hash
-git reset --hard origin/master: go back to the state of web repository
+git reset --hard origin/main: go back to the state of web repository
+
+main: master branch
+head: the branch now working on
+
+git branch: tell what branches exist and what branch currently working on
+git checkout -b <branch name>: create and switch to a new branch
+
 -->
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>CS50W</title>
+        <style>
+            h1 {
+                color: red;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="color:blue;">This is CS50W lecture 1</h1>
+        <h1>This is CS50W lecture 1</h1>
         <h2>Current time is 12:20pm</h2>
     </body>
 </html>
